@@ -3,55 +3,457 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maurice - Personal Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Nguyễn Công Quý - Interactive Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./images/faticon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
+    <!-- Particle.js Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header id="header">
       <nav>
-        <ul>
+        <div class="logo">
+          <span>Quy Nguyen Cong</span>
+        </div>
+        <ul id="nav-menu">
           <li><a href="#about">About</a></li>
+          <li><a href="#study">Study</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
     </header>
-    <section id="about">
-      <div class="about-container">
-        <img
-          src="https://i.pinimg.com/736x/e9/d9/d7/e9d9d75f17dd776d1801bc8db5512804.jpg"
-          alt="Maurice's Avatar"
-          class="avatar"
-        />
-        <div class="about-text">
-          <h1>Hi, I'm Nguyễn Công Quý!</h1>
-          <p>
-            A fourth-year student at Hutech University with a passion for
-            software development, specializing in ASP.NET, Flutter, and creative
-            problem-solving.
-          </p>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <div class="about-container">
+          <div class="avatar-container">
+            <div class="avatar-bg"></div>
+            <img
+              src="./images/IMG_20240507_173447.jpg"
+              alt="Nguyễn Công Quý"
+              class="avatar"
+              id="avatar"
+            />
+          </div>
+          <div class="about-text">
+            <h1>Hi, I'm <span>Quy Nguyen Cong</span></h1>
+            <div class="typing-text" id="typing-text"></div>
+            <p>
+              Hi, I'm Quy, a future Software Engineer and a senior student at
+              HUTECH. I’m passionate about crafting innovative products through
+              clean, efficient code. With expertise in ASP.NET and Flutter, I
+              strive to build scalable, intuitive solutions that enhance user
+              experience and make a real impact.
+            </p>
+            <div class="skills">
+              <div class="skill-tag">ASP.NET</div>
+              <div class="skill-tag">C#</div>
+              <div class="skill-tag">Flutter</div>
+              <div class="skill-tag">Dart</div>
+              <div class="skill-tag">Java</div>
+              <div class="skill-tag">JavaScript</div>
+              <div class="skill-tag">NodeJs</div>
+              <div class="skill-tag">SQL Server</div>
+              <div class="skill-tag">MySQL</div>
+              <div class="skill-tag">MongoDB</div>
+              <div class="skill-tag">UI/UX</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">Online Classroom Management Website</div>
-        <div class="project-card">Smart Investment Advisory System</div>
-        <div class="project-card">English Learning Mobile App</div>
-        <div class="project-card">Skill Exchange Website</div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: maurice@example.com</p>
-      <p>
-        GitHub:
-        <a href="https://github.com/quyok808" target="_blank">quyok808</a>
-      </p>
-    </section>
+      </section>
+
+      <!-- Study Section -->
+      <section id="study">
+        <h2 class="section-title">Education Journey</h2>
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 - Present</div>
+            <div class="timeline-content">
+              <h3>Ho Chi Minh City University of Technology (HUTECH)</h3>
+              <h4>Bachelor of Software Engineering</h4>
+              <ul class="study-details">
+                <li>Expected graduation: 09/2025</li>
+                <li>GPA: 3.48/4.0</li>
+                <li>
+                  Key courses: Data Structures & Algorithms, Object Oriented
+                  Programming Web Development, Mobile Development, Database
+                  Systems, Software Development Process, Database Systems
+                </li>
+                <li>
+                  Capstone project: Online Classroom Management System, Skill
+                  Exchange Website, Learning English Mobile App
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019 - 2021</div>
+            <div class="timeline-content">
+              <h3>Dak O High School</h3>
+              <ul class="study-details">
+                <li>Graduated with distinction</li>
+                <li>Participated in computer science club</li>
+                <li>
+                  Developed first programming projects in Pascal and C# (Caro
+                  game application)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Additional Education</div>
+            <div class="timeline-content">
+              <h3>Online Courses & Certifications</h3>
+              <div class="certifications">
+                <div class="certification-item">
+                  <h4>English – B1 English Proficiency</h4>
+                  <span>CERF, 2024</span>
+                </div>
+                <div class="certification-item">
+                  <h4>Git & GitHub Mastery</h4>
+                  <span>Udemy, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img
+                src="./images/SE.png"
+                alt="Skill Exchange"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Skill Exchange</h3>
+              <p>
+                Community platform where users can teach and learn skills from
+                each other through virtual sessions and resource sharing.
+              </p>
+              <div class="project-tags">
+                <div class="project-tag">Express.js</div>
+                <div class="project-tag">Mediator Patten</div>
+                <div class="project-tag">MongoDB</div>
+                <div class="project-tag">Socket.io</div>
+              </div>
+              <div class="project-links">
+                <!-- <a href="#" class="project-link demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a> -->
+                <a
+                  href="https://github.com/quyok808/Skill-Exchange-Website-BE.git"
+                  class="project-link code"
+                >
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-container">
+              <img
+                src="./images/OCM.png"
+                alt="Online Classroom"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Online Classroom</h3>
+              <p>
+                A comprehensive virtual learning platform with real-time
+                collaboration, assignment management, and progress tracking.
+              </p>
+              <div class="project-tags">
+                <div class="project-tag">ASP.NET Core</div>
+                <div class="project-tag">SignalR</div>
+                <div class="project-tag">SQL Server</div>
+                <div class="project-tag">Stringee API</div>
+              </div>
+              <div class="project-links">
+                <!-- <a href="#" class="project-link demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a> -->
+                <a
+                  href="https://github.com/quyok808/Online_Classroom_Management_Website.git"
+                  class="project-link code"
+                >
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img
+                src="./images/Mobile_English.png"
+                alt="Language Learning"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>English Learning App</h3>
+              <p>
+                Interactive mobile application for language learning with speech
+                recognition, gamification, and progress tracking.
+              </p>
+              <div class="project-tags">
+                <div class="project-tag">Flutter</div>
+                <div class="project-tag">Firebase</div>
+                <div class="project-tag">Dart</div>
+                <div class="project-tag">GetX</div>
+              </div>
+              <div class="project-links">
+                <!-- <a href="#" class="project-link demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a> -->
+                <a
+                  href="https://github.com/quyok808/mobile_English.git"
+                  class="project-link code"
+                >
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img-container">
+              <img
+                src="./images/QLST.jpg"
+                alt="Language Learning"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Supermarket Management Website</h3>
+              <p>
+                The supermarket management project is a software system that
+                helps manage inventory, sales, payments, and staff, optimizing
+                operational processes and improving business efficiency.
+              </p>
+              <div class="project-tags">
+                <div class="project-tag">Java Spring Boot</div>
+                <div class="project-tag">MySQL</div>
+                <div class="project-tag">Restful API</div>
+              </div>
+              <div class="project-links">
+                <!-- <a href="#" class="project-link demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a> -->
+                <a
+                  href="https://github.com/quyok808/QLST.git"
+                  class="project-link code"
+                >
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-grid">
+            <!-- Contact Info Card -->
+            <div class="contact-info-card">
+              <div class="contact-header">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h3>Let's Connect</h3>
+                <p>
+                  I'm always open to discussing new projects or opportunities
+                </p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-details">
+                    <h4>Email Me</h4>
+                    <a href="mailto:ncquy250203@gmail.com" class="contact-link">
+                      ncquy250203@gmail.com
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="method-details">
+                    <h4>Call Me</h4>
+                    <a href="tel:+84358361511" class="contact-link"
+                      >+84 358 361 511</a
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="method-details">
+                    <h4>Location</h4>
+                    <p>Thu Duc City, Ho Chi Minh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Card -->
+            <!-- Social Media Card -->
+            <div class="social-card">
+              <div class="social-header">
+                <div class="social-icon-wrapper">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Connect With Me</h3>
+                <p>Let's collaborate and stay in touch</p>
+              </div>
+
+              <div class="social-grid">
+                <a
+                  href="https://github.com/quyok808"
+                  target="_blank"
+                  class="social-item github"
+                >
+                  <div class="social-icon">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">GitHub</span>
+                    <span class="social-handle">@quyok808</span>
+                  </div>
+                  <i class="fas fa-external-link-alt social-arrow"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/ncquy/"
+                  target="_blank"
+                  class="social-item linkedin"
+                >
+                  <div class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">LinkedIn</span>
+                    <span class="social-handle">/in/ncquy</span>
+                  </div>
+                  <i class="fas fa-external-link-alt social-arrow"></i>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/ncquy250203"
+                  target="_blank"
+                  class="social-item facebook"
+                >
+                  <div class="social-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">Facebook</span>
+                    <span class="social-handle">ncquy250203</span>
+                  </div>
+                  <i class="fas fa-external-link-alt social-arrow"></i>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/precious8lv/"
+                  target="_blank"
+                  class="social-item instagram"
+                >
+                  <div class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="social-info">
+                    <span class="social-name">Instagram</span>
+                    <span class="social-handle">@precious8lv</span>
+                  </div>
+                  <i class="fas fa-external-link-alt social-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Maurice. All rights reserved</p>
+      <div class="footer-content">
+        <div class="footer-logo">Quy Nguyen Cong</div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#study">Study</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/quyok808" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ncquy/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.facebook.com/ncquy250203" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/precious8lv/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="copyright">
+          &copy; 2025 Nguyễn Công Quý. All rights reserved.
+        </p>
+      </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
